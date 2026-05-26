@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\nodejs\"; cd \"c:\\\\Users\\\\user\\\\Downloads\\\\noelclawfunnew\"; node --version; npx --version)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\nodejs\"; cd \"c:\\\\Users\\\\user\\\\Downloads\\\\noelclawfunnew\"; npx vite --host)",
+      "WebFetch(domain:github.com)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\nodejs\"; cd \"c:\\\\Users\\\\user\\\\Downloads\\\\noelclawfunnew\"; npx tsc --noEmit 2>&1 | Select-Object -First 30)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Git\\\\bin\"; git --version)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\Git\\\\cmd\"; git --version)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\Git\\\\cmd\"; cd \"c:\\\\Users\\\\user\\\\Downloads\\\\noelclawfunnew\"; git init; git remote add origin https://github.com/rimurucook/noelclawfunnew.git; git add .; git commit -m \"update landing page\")"
+    ]
+  }
+}
