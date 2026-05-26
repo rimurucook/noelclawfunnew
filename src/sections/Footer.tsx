@@ -97,8 +97,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="text-sm text-muted-foreground/60">&copy; 2025 NoelClaw. All rights reserved.</span>
-          <span className="font-mono text-xs text-muted-foreground/40 break-all text-center">CA: 0x4B524015D54a27d4472F5c59c570730D69499Ba3</span>
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <span className="text-sm text-muted-foreground/60">&copy; 2026 NoelClaw. All rights reserved.</span>
+            <span className="font-mono text-xs text-muted-foreground/40 break-all text-center md:text-left">CA: 0x4B524015D54a27d4472F5c59c570730D69499Ba3</span>
+          </div>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
             <span className="text-xs font-medium uppercase tracking-[0.05em] text-muted-foreground/60">All Systems Operational</span>
