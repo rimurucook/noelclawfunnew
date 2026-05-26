@@ -147,13 +147,13 @@ export function X402Payments() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-6"
         >
-          <div className="bg-zinc-950 border border-zinc-800 rounded-2xl p-5 font-mono text-xs text-zinc-300 leading-relaxed overflow-x-auto">
-            <p className="text-zinc-500 mb-2 whitespace-nowrap"># Install</p>
-            <p className="mb-3 whitespace-nowrap">npx -y @noelclaw/research</p>
-            <p className="text-zinc-500 mb-2 whitespace-nowrap"># With session token (recommended)</p>
-            <p className="mb-3 whitespace-nowrap">NOELCLAW_SESSION_TOKEN=your_token npx -y @noelclaw/research</p>
-            <p className="text-zinc-500 mb-2 whitespace-nowrap"># x402 auto-payment</p>
-            <p className="whitespace-nowrap">NOELCLAW_PAYMENT_HEADER=base64(txHash:requestId) npx -y @noelclaw/research</p>
+          <div className="bg-secondary border border-border rounded-2xl p-5 font-mono text-xs leading-relaxed overflow-x-auto">
+            <p className="text-muted-foreground/50 mb-2 whitespace-nowrap"># Install</p>
+            <p className="text-foreground/80 mb-3 whitespace-nowrap">npx -y @noelclaw/research</p>
+            <p className="text-muted-foreground/50 mb-2 whitespace-nowrap"># With session token (recommended)</p>
+            <p className="text-foreground/80 mb-3 whitespace-nowrap">NOELCLAW_SESSION_TOKEN=your_token npx -y @noelclaw/research</p>
+            <p className="text-muted-foreground/50 mb-2 whitespace-nowrap"># x402 auto-payment</p>
+            <p className="text-foreground/80 whitespace-nowrap">NOELCLAW_PAYMENT_HEADER=base64(txHash:requestId) npx -y @noelclaw/research</p>
           </div>
         </motion.div>
 
