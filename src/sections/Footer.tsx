@@ -9,14 +9,15 @@ const productLinks = [
 
 const resourceLinks = [
   { label: 'Documentation', href: 'https://docs.noelclaw.fun', external: true },
-  { label: 'Roadmap', href: '#roadmap', external: false },
+  { label: 'Open Source', href: '#open-source', external: false },
   { label: 'Status', href: '#', external: false },
 ]
 
 const communityLinks = [
-  { label: 'Discord', href: '#' },
-  { label: 'Twitter/X', href: 'https://x.com/noelclawfun' },
-  { label: 'Telegram', href: '#' },
+  { label: 'Twitter/X', href: 'https://x.com/noelclawfun', external: true },
+  { label: 'Telegram', href: 'https://t.me/noelclaww', external: true },
+  { label: 'DexScreener', href: 'https://dexscreener.com/base/0xfe4c720bc323b9eb57a2362bf3812eb698d54f9f940111dffb57c0a00b466ea5', external: true },
+  { label: 'GitHub', href: 'https://github.com/rimurucook/noelclawfunnew', external: true },
 ]
 
 export default function Footer() {
@@ -86,7 +87,7 @@ export default function Footer() {
               <h4 className="text-xs font-medium uppercase tracking-[0.05em] text-muted-foreground mb-4">Community</h4>
               <div className="space-y-3">
                 {communityLinks.map(link => (
-                  <a key={link.label} href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors block">
+                  <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors block">
                     {link.label}
                   </a>
                 ))}
